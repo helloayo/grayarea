@@ -1,0 +1,146 @@
+<!-- /exercises/08-comic.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gray Funnies</title>
+
+    <link rel="stylesheet" href="../css/08-comic.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Gray Funnies</h1>
+<svg display="none">
+
+  <filter id="turbulence-1">
+    <feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
+    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  </filter>
+
+  <filter id="turbulence-2">
+    <feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
+    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  </filter>
+
+  <filter id="turbulence-3">
+    <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
+    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  </filter>
+
+  <filter id="turbulence-4">
+    <feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
+    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  </filter>
+
+  <filter id="turbulence-5">
+    <feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
+    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+  </filter>
+
+</svg>
+     <div class="comic">
+       <div class="panel one">
+        <div class="inner">
+         <div class="blue monster">
+          <div class="eyes">
+          <div class="eye">
+          <div class="outline lookMid"></div>
+          </div>
+          <div class="eye">
+
+          <div class="outline lookMid"></div>
+          </div>
+         </div>
+          <div class="mouth">
+            <div class="outline"></div>
+          </div>
+          <div class="outline"></div>
+         </div>
+         </div>
+       </div>
+       <div class="panel two">
+         <div class="inner">
+         <div class="blue monster">
+          <div class="eyes">
+          <div class="eye">
+            <div class="outline lookRight"></div>
+          </div>
+          <div class="eye">
+            <div class="outline lookRight"></div>
+          </div>
+         </div>
+
+          <div class="mouth">
+            <div class="outline"></div>
+          </div>
+          <div class="outline"></div>
+         </div>
+         <div class="yellow monster bye">
+          <div class="eyes">
+          <div class="eye">
+            <div class="outline lookLeft"></div>
+          </div>
+          <div class="eye">
+            <div class="outline lookLeft"></div>
+          </div>
+         </div>
+
+          <div class="mouth">
+            <div class="outline"></div>
+          </div>
+          <div class="outline"></div>
+         </div>
+         </div>
+       </div>
+       <div class="panel three">
+
+         <div class="inner">
+         <div class="blue monster squiggle">
+          <div class="eyes">
+          <div class="eye">
+            <div class="outline lookRight"></div>
+          </div>
+          <div class="eye">
+            <div class="outline lookRight"></div>
+          </div>
+         </div>
+
+          <div class="mouth">
+            <div class="outline"></div>
+          </div>
+          <div class="outline"></div>
+         </div>
+         <div class="yellow monster hi">
+          <div class="eyes">
+          <div class="eye">
+            <div class="outline lookMid shake"></div>
+          </div>
+          <div class="eye">
+            <div class="outline lookMid shake"></div>
+          </div>
+         </div>
+
+          <div class="mouth">
+            <div class="outline"></div>
+          </div>
+          <div class="outline"></div>
+         </div>
+         <div class="red monster">
+          <div class="eyes">
+          <div class="eye">
+            <div class="outline lookLeft"></div>
+          </div>
+          <div class="eye">
+            <div class="outline lookLeft"></div>
+          </div>
+         </div>
+
+          <div class="mouth">
+            <div class="outline"></div>
+          </div>
+          <div class="outline"></div>
+         </div>
+         </div>
+       </div>
+     </div>
+  </body>
+</html>

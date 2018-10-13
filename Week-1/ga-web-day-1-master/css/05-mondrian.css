@@ -1,0 +1,77 @@
+/* 05-mondrian.css */
+
+/* Put your CSS here */
+body{
+    background-color: beige;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mondrian{
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+}
+.top{
+    height: 290px;
+    padding-bottom: 5px;
+    display: flex;
+
+}
+.bottom{
+    height: 100px;
+    padding-top: 5px;
+    display: flex;
+}
+.white{
+    background-color: #fff;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.big{
+    margin-left: 5px;
+    flex-basis: 80%;
+
+    }
+.top .lft{
+    margin-right: 5px;
+    flex-basis: 20%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floater{
+    background-color: #000;
+    height: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.bottom .lft{
+    margin-right: 10px;
+    flex-basis: 21%;
+}
+.bottom .mid{
+    margin-right: 10px;
+    flex-basis: 70%;
+}
+.bottom .rgt{
+    flex-basis: 9%;
+    display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.baby{
+    border-top: 12px solid #000;
+    height: 43px;
+     width: 100%;
+}

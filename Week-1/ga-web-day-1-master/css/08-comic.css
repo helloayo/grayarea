@@ -1,0 +1,213 @@
+body{
+  background-color: lemonchiffon;
+  font-family: 'Bangers', cursive;
+  padding: 34px;
+}
+h1{
+  letter-spacing: 2px;
+}
+.comic{
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.panel{
+  height: 400px;
+  width: 300px;
+  border: 5px solid #000;
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #efefef;
+  padding: 15px 15px 0 15px;
+}
+.inner{
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.monster{
+position: relative;
+margin: 0 10px;
+  width: 90px;
+  height: 200px;
+  border-radius: 40% 40% 0 0;
+}
+.outline{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+    border: 3px solid #000;
+}
+
+.eye .outline{
+  width: 250%;
+  height: 250%;
+  position: absolute;
+}
+.lookRight{
+  left: -13px;
+  top: -12px;
+}
+.lookLeft{
+  right: -13px;
+  top: -13px;
+}
+.lookMid{
+  left: -10px;
+  top: -14px;
+}
+.eyes{
+  z-index: 100;
+  display: block;
+  position: absolute;
+  top: -13px;
+      left: 7px;
+    width: 100%;
+}
+.eye{
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 100%;
+  border: 10px solid #fff;
+  margin: 0 3px;
+  display: inline-block;
+  position: relative;
+}
+.mouth{
+  background-color: fuchsia;
+      border-radius: 45%;
+    width: 50%;
+
+     height: 36%;
+    position: absolute;
+    top: 12%;
+    left: 23%;
+}
+.one .blue .mouth {
+  height: 16%;
+    animation: open 2.5s ease-in-out;
+}
+.one .blue .mouth .outline {
+    animation: rock 2.5s ease-in-out;
+}
+
+.two .blue .mouth .outline {
+    animation: rock 2.5s ease-in-out;
+}
+
+.three .blue .mouth .outline {
+    animation: rock 1.5s infinite;
+}
+.two .yellow  {
+    animation: open 3.5s ease-in;
+}
+.two .yellow::after{
+  visibility:hidden;
+}
+.three .yellow  {
+    animation: open 1.5s  infinite;
+}
+.three .red{
+  animation: colorchange 15s infinite;
+}
+.two .red, .two .blue, .two .yellow, .two .blue .mouth .outline {
+    animation-delay: 2s;
+}
+.three .red, .three .blue, .three .yellow, .three .blue .mouth .outline, .three .shake {
+    animation-delay: 5s;
+}
+.squiggle {
+  animation: squiggle 0.4s infinite alternate;
+}
+.shake {
+  animation: shake 15s infinite;
+}
+
+@keyframes rock{
+  0%{transform: rotate(10deg)}
+  25%{transform: rotate(-10deg)}
+  50%{transform: rotate(10deg)}
+  75%{transform: rotate(-10deg)}
+  100%{transform: rotate(10deg)}
+}
+@keyframes open{
+  0%{transform: scaleY(1);}
+  50%{transform: scaleY(1.6);}
+  100%{transform: scaleY(1); }
+}
+@keyframes squiggle {
+  0% {
+    filter: url("#turbulence-1");
+  }
+  25% {
+    filter: url("#turbulence-2");
+  }
+  50% {
+    filter: url("#turbulence-3");
+  }
+  75% {
+    filter: url("#turbulence-4");
+  }
+  100% {
+    filter: url("#turbulence-5");
+  }
+}
+ @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: lime;}
+      100% {background: red;}
+    }
+  @keyframes lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
